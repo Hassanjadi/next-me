@@ -1,9 +1,9 @@
 "use server";
 
-import { getErrorMessage, validateString } from "@/lib/utils";
-import { Resend } from "resend";
-import { ContactFormEmail } from "@/email/contact-form-email";
 import React from "react";
+import { ContactFormEmail } from "@/email/contact-form-email";
+import { Resend } from "resend";
+import { getErrorMessage, validateString } from "@/lib/utils";
 
 const resend = new Resend(process.env.RESEND_API_KEY);
 
@@ -26,7 +26,7 @@ export const sendEmail = async (formData: FormData) => {
   let data;
   try {
     data = await resend.emails.send({
-      from: "Contact Form <onboarding@resend.com>",
+      from: "Contact Form <onboarding@resend.dev>",
       to: "hassanemail05@gmail.com",
       subject: "Message from contact form",
       reply_to: senderEmail as string,
