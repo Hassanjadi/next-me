@@ -1,9 +1,9 @@
 "use client";
 
 import React from "react";
-import { SectionHeading } from "./section-heading";
 import { motion } from "framer-motion";
 import { useSectionInView } from "@/lib/hooks";
+import { SectionHeading } from "./section-heading";
 
 export const About = () => {
   const { ref } = useSectionInView("About");
@@ -20,7 +20,7 @@ export const About = () => {
       <SectionHeading>About me</SectionHeading>
       <p className="mb-3">
         After graduating with a degree in{" "}
-        <span className="font-medium">Information Technology,</span>, I decided
+        <span className="font-medium">Information Technology,</span> I decided
         to pursue my passion for programming. I enrolled in a coding bootcamp
         and learned{" "}
         <span className="font-medium">full-stack web development</span>.{" "}
