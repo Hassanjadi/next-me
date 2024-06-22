@@ -1,8 +1,8 @@
 "use client";
 
-import { projectsData } from "@/lib/data";
 import { useRef } from "react";
 import Image from "next/image";
+import { projectsData } from "@/lib/data";
 import { motion, useScroll, useTransform } from "framer-motion";
 
 type ProjectProps = (typeof projectsData)[number];
