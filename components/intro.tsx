@@ -4,6 +4,7 @@ import React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { motion } from "framer-motion";
+import Potrait from "@/public/Potrait.jpg";
 import { HiDownload } from "react-icons/hi";
 import { useSectionInView } from "@/lib/hooks";
 import { FaGithubSquare } from "react-icons/fa";
@@ -31,7 +32,7 @@ export const Intro = () => {
             }}
           >
             <Image
-              src="https://i.ibb.co.com/vZkZ4Gs/IMG-2351.jpg"
+              src={Potrait}
               alt="Hassan potrait"
               width="192"
               height="192"
